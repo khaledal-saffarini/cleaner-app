@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="10.0" android:layout_weight="7.0">
+        <TextView android:textSize="@dimen/_25sdp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Extreme Power Saving" android:layout_weight="2.0" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/pop_up" />
+            <TextView android:textSize="@dimen/_18sdp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/added" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Add" />
+            <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/addedtime" android:paddingTop="@dimen/_50sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="(+10 h 30m)" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/_16sdp" android:textColor="#ff414141" android:gravity="center" android:id="@id/addedtimedetail" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Extended Battery Up to 10h 30m" android:layout_weight="1.5" />
+        <ImageView android:id="@id/applied" android:padding="@dimen/_8sdp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/apply" android:layout_weight="1.5" />
+    </LinearLayout>
+    <LinearLayout android:background="#ff870d4e" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="1.0dip" android:layout_weight="3.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:background="#fff9f9f9" android:paddingTop="@dimen/_10sdp" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foregroundGravity="center" />
+    </LinearLayout>
+</LinearLayout>

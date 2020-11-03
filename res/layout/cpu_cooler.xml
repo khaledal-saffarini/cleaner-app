@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="6.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="8.0" android:layout_weight="4.8">
+        <RelativeLayout android:padding="@dimen/_20sdp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+            <ImageView android:id="@id/tempimg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/blue_cooler" />
+            <TextView android:textSize="@dimen/_25sdp" android:textStyle="bold" android:textColor="#ff414141" android:gravity="center" android:id="@id/batterytemp" android:layout_width="fill_parent" android:layout_height="@dimen/_40sdp" android:layout_marginBottom="@dimen/_20sdp" android:text="23.2" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/_25sdp" android:textStyle="bold" android:textColor="#ff414141" android:gravity="center|top" android:id="@id/showmain" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="NORMAL" android:layout_weight="1.0" />
+        <ImageView android:gravity="center" android:id="@id/coolbutton" android:padding="@dimen/_2sdp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/cool_button_blue" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="#ff414141" android:gravity="center" android:id="@id/showsec" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="CPU Temperature is GOOD" android:layout_weight="1.0" />
+    </LinearLayout> z <RelativeLayout android:gravity="center" android:layout_gravity="center" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="1.0dip" android:layout_weight="1.2">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foregroundGravity="center" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:gravity="center" android:id="@id/nooverheating" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Currently No App Causing Overheating" />
+    </RelativeLayout>
+</LinearLayout>

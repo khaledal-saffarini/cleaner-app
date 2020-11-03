@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="#ff870d4e" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager android:layout_gravity="top" android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <com.google.android.material.tabs.TabLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:layout_gravity="bottom" android:id="@id/tab_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:tabBackground="@drawable/tab_color_selector" app:tabIndicatorColor="#ffffffff" />
+    <LinearLayout android:layout_gravity="center" android:id="@id/adView" android:background="#ff27282d" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_alignParentBottom="false" android:layout_centerHorizontal="true" />
+</LinearLayout>

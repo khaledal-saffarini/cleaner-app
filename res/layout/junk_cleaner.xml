@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="8.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="8.0" android:layout_weight="6.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+            <ImageView android:id="@id/mainbrush" android:paddingTop="@dimen/_10sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/junk_red" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="2.0" android:layout_weight="3.0">
+            <TextView android:textSize="@dimen/_25sdp" android:textStyle="bold" android:textColor="#ff414141" android:gravity="center" android:id="@id/maintext" android:paddingBottom="@dimen/_5sdp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="CRYSTAL CLEAR" android:layout_weight="1.0" />
+            <ImageView android:id="@id/mainbutton" android:padding="@dimen/_5sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/_15sdp" android:src="@drawable/cleaned" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="1.0dip" android:weightSum="4.0" android:layout_weight="2.0">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/_5sdp" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="4.0" android:layout_weight="1.0">
+            <TextView android:textColor="#ff414141" android:gravity="center" android:id="@id/cachetext" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="0 MB" android:layout_weight="1.0" />
+            <ImageView android:id="@id/cache" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/cache" android:layout_weight="2.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/_5sdp" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="4.0" android:layout_weight="1.0">
+            <TextView android:textColor="#ff414141" android:gravity="center" android:id="@id/temptext" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="0 MB" android:layout_weight="1.0" />
+            <ImageView android:id="@id/temp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/temp" android:layout_weight="2.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/_5sdp" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="4.0" android:layout_weight="1.0">
+            <TextView android:textColor="#ff414141" android:gravity="center" android:id="@id/residuetext" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="0 MB" android:layout_weight="1.0" />
+            <ImageView android:id="@id/residue" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/res" android:layout_weight="2.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/_5sdp" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="4.0" android:layout_weight="1.0">
+            <TextView android:textColor="#ff414141" android:gravity="center" android:id="@id/systemtext" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="0 MB" android:layout_weight="1.0" />
+            <ImageView android:id="@id/system" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/sys" android:layout_weight="2.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

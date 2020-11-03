@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:background="#ffffffff" android:padding="@dimen/_40sdp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.hookedonplay.decoviewlib.DecoView android:id="@id/dynamicArcView2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/_25sdp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/completion" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="0%" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="1.0dip" android:weightSum="6.0" android:layout_weight="4.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="20.0" android:layout_weight="1.0">
+            <ImageView android:id="@id/istpic" android:padding="@dimen/_5sdp" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/circle_grey" android:layout_weight="1.5" />
+            <TextView android:textColor="#ff808080" android:gravity="center|left" android:id="@id/ist" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Decreasing Brightness Upto 90%" android:layout_weight="18.5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="20.0" android:layout_weight="1.0">
+            <ImageView android:id="@id/secpic" android:padding="@dimen/_5sdp" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/circle_grey" android:layout_weight="1.5" />
+            <TextView android:textColor="#ff808080" android:gravity="center|left" android:id="@id/sec" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Decreasing Device Performance" android:layout_weight="18.5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="20.0" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/thipic" android:padding="@dimen/_5sdp" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/circle_grey" android:layout_weight="1.5" />
+            <TextView android:textColor="#ff808080" android:gravity="center|left" android:id="@id/thi" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Closing Background Apps and Services" android:layout_weight="18.5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="20.0" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="top" android:id="@id/foupic" android:padding="@dimen/_5sdp" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/circle_grey" android:layout_weight="1.5" />
+            <TextView android:textColor="#ff808080" android:gravity="center|left" android:id="@id/fou" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Locking Acess To Power Consuming Apps" android:layout_weight="18.5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="20.0" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="top" android:id="@id/fifthpic" android:padding="@dimen/_5sdp" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/circle_grey" android:layout_weight="1.5" />
+            <TextView android:textColor="#ff808080" android:gravity="center|left" android:id="@id/fif" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Closing All Power Consuming Functions" android:layout_weight="18.5" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

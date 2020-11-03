@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="160.0dip" android:weightSum="10.0" android:layout_weight="6.5">
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="7.0">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/blue_circle_battery" />
+            <RelativeLayout android:gravity="center" android:padding="@dimen/_20sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_5sdp">
+                <me.itangqi.waveloadingview.WaveLoadingView android:layout_gravity="center" android:id="@id/waveView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:wlv_borderColor="#ffffffff" app:wlv_borderWidth="6.0dip" app:wlv_progressValue="40" app:wlv_round_rectangle="true" app:wlv_shapeType="circle" app:wlv_titleBottomSize="@dimen/_30sdp" app:wlv_titleCenterColor="#ff000000" app:wlv_titleCenterSize="@dimen/_30sdp" app:wlv_titleCenterStrokeColor="#ff414141" app:wlv_titleCenterStrokeWidth="2.0dip" app:wlv_triangle_direction="north" app:wlv_waveAmplitude="40.0" app:wlv_waveColor="#ff2499e0" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="2.0" android:layout_weight="3.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/_30sdp" android:textColor="#ff414141" android:id="@id/hourmain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8" />
+                <TextView android:textSize="@dimen/_24sdp" android:textColor="#ff414141" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" h" />
+                <TextView android:textSize="@dimen/_30sdp" android:textColor="#ff414141" android:id="@id/minutesmain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:text="15" />
+                <TextView android:textSize="@dimen/_24sdp" android:textColor="#ff414141" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" m" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/_18sdp" android:textColor="#ff414141" android:gravity="center|top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="charging time remaning" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginTop="1.0dip" android:weightSum="5.0" android:layout_weight="3.5">
+        <androidx.legacy.widget.Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="0.4" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="10.0" android:layout_weight="1.2">
+            <LinearLayout android:gravity="top" android:layout_gravity="center|top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginLeft="@dimen/_1sdp" android:layout_weight="3.0">
+                <TextView android:textSize="@dimen/_15sdp" android:textColor="#ff414141" android:id="@id/hourn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8" />
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#ff414141" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" h" />
+                <TextView android:textSize="@dimen/_15sdp" android:textColor="#ff414141" android:id="@id/minutes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:text="15" />
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#ff414141" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" m" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:id="@id/normal" android:layout_width="@dimen/_68sdp" android:layout_height="@dimen/_68sdp" android:src="@drawable/normal_mode" />
+        </LinearLayout>
+        <androidx.legacy.widget.Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="0.2" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="10.0" android:layout_weight="1.2">
+            <LinearLayout android:gravity="center|top" android:layout_gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginLeft="@dimen/_1sdp" android:layout_weight="3.0">
+                <TextView android:textSize="@dimen/_15sdp" android:textColor="#ff414141" android:id="@id/hourp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8" />
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#ff414141" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" h" />
+                <TextView android:textSize="@dimen/_15sdp" android:textColor="#ff414141" android:id="@id/minutesp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:text="15" />
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#ff414141" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" m" />
+            </LinearLayout>
+            <ImageView android:id="@id/powersaving" android:layout_width="@dimen/_78sdp" android:layout_height="@dimen/_68sdp" android:src="@drawable/ultra_mode" />
+        </LinearLayout>
+        <androidx.legacy.widget.Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="0.3" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="10.0" android:layout_weight="1.2">
+            <LinearLayout android:gravity="top" android:layout_gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginLeft="@dimen/_1sdp" android:layout_weight="3.0">
+                <TextView android:textSize="@dimen/_15sdp" android:textColor="#ff414141" android:id="@id/houru" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8" />
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#ff414141" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" h" />
+                <TextView android:textSize="@dimen/_15sdp" android:textColor="#ff414141" android:id="@id/minutesu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:text="15" />
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#ff414141" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" m" />
+            </LinearLayout>
+            <ImageView android:id="@id/ultra" android:layout_width="@dimen/_68sdp" android:layout_height="@dimen/_68sdp" android:src="@drawable/extreme_mode" />
+        </LinearLayout>
+        <androidx.legacy.widget.Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

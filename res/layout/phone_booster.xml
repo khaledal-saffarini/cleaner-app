@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.5">
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/black_circle" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/waves" android:paddingTop="@dimen/_20sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="-700.0dip" android:src="@drawable/running_bar" />
+            <LinearLayout android:gravity="center" android:padding="@dimen/_18sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <com.hookedonplay.decoviewlib.DecoView android:id="@id/dynamicArcView2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <ImageView android:id="@id/circularlines" android:padding="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/circular_lines" android:layout_centerInParent="true" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/_40sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.0">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="#fff9f9f9" android:gravity="center" android:id="@id/top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Storage" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/_24sdp" android:textColor="#fff9f9f9" android:gravity="center" android:id="@id/centree" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="#fff9f9f9" android:gravity="center" android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Found" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.2">
+        <LinearLayout android:gravity="center" android:id="@id/scanlay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="#ff414141" android:gravity="center" android:id="@id/scanning" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/optimizelay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/optbutton" android:layout_width="@dimen/_150sdp" android:layout_height="@dimen/_40sdp" android:layout_marginBottom="@dimen/_10sdp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="2.0" android:layout_weight="3.3">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#fff9f9f9" android:paddingLeft="@dimen/_1sdp" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:weightSum="6.0" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+                <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_marginRight="@dimen/_12sdp" android:src="@drawable/running_apps" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/_22sdp" android:textColor="#ff414141" android:gravity="center" android:id="@id/processes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/_12sdp" android:textColor="#ff414141" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Running Processes" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/_3sdp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="2.0" android:layout_weight="1.0">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="#ff414141" android:gravity="right" android:id="@id/appsused" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="1.24 GB/" android:layout_weight="1.0" />
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/_12sdp" android:textColor="#ff414141" android:gravity="left" android:id="@id/appsfreed" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="2.67 GB" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#fff9f9f9" android:paddingLeft="@dimen/_1sdp" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:weightSum="6.0" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+                <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_marginRight="@dimen/_12sdp" android:src="@drawable/ram_usage" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/_22sdp" android:textColor="#ff414141" android:gravity="center" android:id="@id/ramperct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="48%" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/_12sdp" android:textColor="#ff414141" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ram Usage" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/_3sdp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="2.0" android:layout_weight="1.0">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="#ff414141" android:gravity="right" android:id="@id/usedram" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="1.24 GB/" android:layout_weight="1.0" />
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/_12sdp" android:textColor="#ff414141" android:gravity="left" android:id="@id/totalram" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="2.67 GB" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

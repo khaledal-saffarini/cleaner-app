@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.tip2toptip.cleanerapp" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:icon="@drawable/thundercleaner" android:label="@string/app_name" android:screenOrientation="portrait" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="lightning.thunder.cleaner.MainActivity" android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false"/>
+        <activity android:name="lightning.thunder.cleaner.PowerSaving_popup" android:screenOrientation="fullSensor"/>
+        <activity android:name="lightning.thunder.cleaner.Ultra_PopUp" android:screenOrientation="fullSensor"/>
+        <activity android:name="lightning.thunder.cleaner.BatterySaver_Black" android:screenOrientation="fullSensor"/>
+        <activity android:name="lightning.thunder.cleaner.Noraml_Mode" android:screenOrientation="fullSensor"/>
+        <activity android:name="lightning.thunder.cleaner.PowerSaving_Complition" android:screenOrientation="fullSensor"/>
+        <activity android:name="lightning.thunder.cleaner.Applying_Ultra" android:screenOrientation="fullSensor"/>
+        <activity android:name="lightning.thunder.cleaner.Sacnning_Junk" android:screenOrientation="fullSensor"/>
+        <activity android:name="lightning.thunder.cleaner.Cpu_Scanner" android:screenOrientation="fullSensor"/>
+        <activity android:name="lightning.thunder.cleaner.Pick_Apps" android:screenOrientation="fullSensor" android:theme="@style/Theme.Transparent"/>
+        <receiver android:name="lightning.thunder.cleaner.Alaram_Booster"/>
+        <receiver android:name="lightning.thunder.cleaner.Alaram_Junk"/>
+        <receiver android:name="lightning.thunder.cleaner.AppListener">
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="lightning.thunder.cleaner.PowerConnected">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="lightning.thunder.cleaner.Broadcast.AlarmReceiver"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.facebook.ads.AudienceNetworkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.tip2toptip.cleanerapp.AudienceNetworkContentProvider" android:exported="false" android:name="com.facebook.ads.AudienceNetworkContentProvider"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="true" android:name="com.unity3d.services.ads.adunit.AdUnitActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="true" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="false" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="false" android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+    </application>
+</manifest>
